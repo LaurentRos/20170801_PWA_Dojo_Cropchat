@@ -1,17 +1,23 @@
 <template>
   <div>
-    <md-card class="my-card">
-      <md-card-media>
-        <img src="https://25.media.tumblr.com/tumblr_m40h4ksiUa1qbyxr0o1_400.gif" alt="Cat">
-      </md-card-media>
-    </md-card>
+    <card
+      class="my-card"
+      v-for="(picture, index) in this.pictures"
+      v-bind:key="picture.id"
+      >
+    >
+    </card>
   </div>
 </template>
 
 <script>
 import data from '../data'
+import Card from './Card'
 
 export default {
+  components: {
+    Card
+  },
   props: {
     pictures: {
       type: Object,
