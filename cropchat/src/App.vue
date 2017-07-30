@@ -4,19 +4,21 @@
       <span>Hello You !</span>
     </header>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <hello></hello>
+      <hello />
+      <card />
     </main>
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import Card from './components/Card'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Hello,
+    Card
   }
 }
 </script>
