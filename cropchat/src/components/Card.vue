@@ -1,12 +1,12 @@
 <template>
   <md-card>
     <md-card-media>
-      <img src="assets/card-image-1.jpg" alt="People">
+      <img :src="this.imageUrl" :alt="this.imageAltText">
     </md-card-media>
 
     <md-card-header>
-      <div class="md-title">Title goes here</div>
-      <div class="md-subhead">Subtitle here</div>
+      <div class="md-title">{{this.imageTitle}}</div>
+      <div class="md-subhead">{{this.imageSubtitle}}</div>
     </md-card-header>
   </md-card>
 </template>

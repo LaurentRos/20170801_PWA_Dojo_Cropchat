@@ -4,6 +4,10 @@
       class="my-card"
       v-for="(picture, index) in this.pictures"
       v-bind:key="picture.id"
+      :image-url="picture.url"
+      :image-alt-text="picture.info"
+      :image-title="picture.title"
+      :image-subtitle="picture.info"
       >
     >
     </card>
