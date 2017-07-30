@@ -1,6 +1,10 @@
 <template>
   <div>
-  Hello
+    <md-card class="my-card">
+      <md-card-media>
+        <img src="https://25.media.tumblr.com/tumblr_m40h4ksiUa1qbyxr0o1_400.gif" alt="Cat">
+      </md-card-media>
+    </md-card>
   </div>
 </template>
 
@@ -19,6 +23,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.my-card {
+  margin: 15px;
+}
+
 h1, h2 {
   font-weight: normal;
 }
