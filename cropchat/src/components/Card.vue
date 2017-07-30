@@ -14,10 +14,22 @@
 <script>
   export default {
     props: {
-      imageUrl: String,
-      imageAltText: String,
-      imageTitle: String,
-      imageSubtitle: String
+      imageUrl: {
+        type: String,
+        default: 'hello imageUrl'
+      },
+      imageAltText: {
+        type: String,
+        default: 'hello imageAltText'
+      },
+      imageTitle: {
+        type: String,
+        default: 'hello imageTitle'
+      },
+      imageSubtitle: {
+        type: String,
+        default: 'hello imageSubtitle'
+      }
     }
   }
 </script>
