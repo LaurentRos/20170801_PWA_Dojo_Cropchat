@@ -5,11 +5,13 @@
 </template>
 
 <script>
+import data from '../data'
+
 export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js PWA'
+  props: {
+    pictures: {
+      type: Object,
+      default: data.pictures
     }
   }
 }
